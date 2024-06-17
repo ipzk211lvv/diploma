@@ -1,0 +1,17 @@
+@import '../../assets/styles/variables';
+
+.profile {
+  display: flex;
+  gap: 20px;
+
+  &__nav {
+    border-right: 1pt solid black;
+    width: max-content;
+    font-size: 22px;
+    padding-right: 20px;
+  }
+
+  &__tabContent {
+    width: 800px;
+  }
+}

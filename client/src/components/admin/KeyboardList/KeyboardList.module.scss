@@ -1,0 +1,65 @@
+.keyboards {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__item {
+    border: 1px solid #ddd;
+  }
+  &__itemInfo {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 40px 1fr 1fr repeat(2, 40px);
+    grid-gap: 10px;
+  }
+
+  &__addButton {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__line {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 6px;
+  }
+
+  &__keyWrapper {
+    border-radius: 10px;
+    border: 2px solid transparent;
+  }
+
+  &__key {
+    text-align: center;
+    padding: 8px;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,28 @@
+.progressbar {
+  display: flex;
+
+  width: 100%;
+  height: 15px;
+
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #d7d7d7;
+
+  &__done {
+    background-color: #36d32d;
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      aspect-ratio: 1;
+      background-color: #36d32d;
+      border: 5px solid white;
+      border-radius: 100%;
+      right: 0;
+    }
+  }
+}

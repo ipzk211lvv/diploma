@@ -1,0 +1,27 @@
+.select {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+
+  &__selected {
+    background-color: #ccc;
+    padding: 10px;
+  }
+
+  &__options {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom: 2px solid #ccc;
+  }
+
+  &__option {
+    padding: 5px;
+
+    &:hover {
+      background-color: #eee;
+    }
+  }
+
+}

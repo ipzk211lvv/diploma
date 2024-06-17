@@ -1,0 +1,14 @@
+.button {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  box-shadow: #ddd 0 0 2px 1px;
+  padding: 1px;
+
+  &__image {
+    align-self: center;
+    width: 50%;
+    height: auto;
+  }
+}

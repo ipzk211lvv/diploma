@@ -1,0 +1,63 @@
+@import "./src/assets/styles/variables";
+
+.input-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+
+  max-height: 400px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  padding: 10px 20px;
+  box-shadow: $white-blue 0 0 5px 1px;
+  border-radius: 15px;
+  font-size: 40px;
+
+  line-height: 1.2em;
+  letter-spacing: 2px;
+  justify-content: center;
+
+  color: #0ccb00;
+
+  &__wrapper {
+  }
+}
+
+
+.color-separator {
+  font-family: inherit;
+  position: relative;
+  color: black;
+}
+
+.input-field {
+
+}
+
+.color-separator:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+
+
+  width: 1pt;
+  border-radius: 1pt;
+  height: 1em;
+  background-color: black;
+
+  animation: cursor-flashing .8s infinite;
+}
+
+@keyframes cursor-flashing {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

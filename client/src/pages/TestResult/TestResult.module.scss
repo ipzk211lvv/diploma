@@ -1,0 +1,98 @@
+@import './src/assets/styles/variables';
+
+@mixin stats-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  min-width: 170px;
+  text-align: center;
+}
+@mixin stats-title{
+  display: flex;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+  font-size: 20px;
+  color: gold;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  &__image {
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+
+  &__speed {
+    @include stats-container;
+    background-color: #d6a5ff;
+
+    &Title {
+      @include stats-title;
+      background-color: #a733ff;
+    }
+  }
+
+  &__target {
+    @include stats-container;
+    background-color: #ffae96;
+
+    &Title {
+      @include stats-title;
+      background-color: #ff5b25;
+    }
+  }
+
+  &__image {
+    max-width: 20px;
+    margin-right: 5px;
+  }
+
+  &__body {
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+    color: white;
+  }
+
+  &__value {
+    display: inline-block;
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: 34px;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+
+  &__item {
+    font-size: 20px;
+    background-color: #fff9d5;
+    border-radius: 10px;
+    border: 5px solid gold;
+    border-left: 2px solid gold;
+    border-top: 2px solid gold;
+    padding: 8px;
+
+    &:hover {
+      margin: 3px 0 0 3px;
+      border: 2px solid gold;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+@import '../../assets/styles/variables';
+
+.courseDetails {
+  padding: 0 20px 10px 10px;
+  position: absolute;
+  width: 250px;
+  min-width: 250px;
+  font-size: 20px;
+
+  &_active {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: $white-blue 0 0 10px 1px;
+  }
+
+  &__button {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    padding: 5px 30px 5px 5px;
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+
+    &::after {
+      content: '⮞';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__button_active {
+    white-space: pre-wrap;
+    &::after {
+      content: '⮜';
+    }
+  }
+
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+
+    max-height: 500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-bottom: 50px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &Lesson {
+      padding: 5px 10px;
+      border-radius: 10px;
+      border: 2px solid #dee0ff;
+      margin: 10px 0 5px;
+    }
+
+    &Exercises {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 5px;
+    }
+
+    &ExerciseWrapper {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    &Exercise {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      aspect-ratio: 1;
+      cursor: pointer;
+      border-radius: 10px;
+      padding: 3px;
+
+      border-width: 2px 4px 4px 2px;
+      border-style: solid;
+      border-color: #dee0ff;
+
+      transition: all .1s;
+      &:hover {
+        margin: 4px 0 0 4px;
+        border-width: 2px;
+      }
+
+      gap: 5px;
+
+      img {
+        max-width: 24px;
+      }
+    }
+  }
+
+  &__buttonChange {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: $white-blue;
+    border: none;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+  }
+}
+

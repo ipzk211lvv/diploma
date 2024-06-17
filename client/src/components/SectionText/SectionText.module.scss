@@ -1,0 +1,17 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px 0;
+
+  &__title {
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}

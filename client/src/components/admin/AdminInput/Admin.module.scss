@@ -1,0 +1,10 @@
+.adminInput {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 0 5px;
+
+  &:not(:disabled) {
+    background-color: #fff3d3;
+  }
+}

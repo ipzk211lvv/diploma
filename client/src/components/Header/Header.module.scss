@@ -1,0 +1,50 @@
+@import '../../assets/styles/variables';
+
+.header {
+    font-size: 24px;
+    border-bottom: .1pt solid $white-blue;
+    font-family: 'Rounded400', sans-serif;
+    box-shadow: $white-blue 0 0 10px 1px;
+    background-color: $background;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header__button {
+    flex: 1;
+
+    &:last-child {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex: 2;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    color: black;
+
+    img {
+        display: block;
+        margin-right: 5px;
+        max-width: 40px;
+    }
+
+    span {
+        align-self: end;
+        line-height: 30px;
+        font-size: 28px;
+    }
+}

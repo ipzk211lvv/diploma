@@ -1,0 +1,20 @@
+.layouts {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__item {
+    display: grid;
+    padding: 10px;
+    border: 1px solid #ddd;
+    grid-template-columns: 1fr repeat(2, 40px);
+    grid-gap: 10px;
+  }
+
+  &__addButton {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+}

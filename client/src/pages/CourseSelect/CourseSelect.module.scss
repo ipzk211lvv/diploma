@@ -1,0 +1,74 @@
+@import "../../assets/styles/variables";
+
+.courseSelect {
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  &__title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    gap: 8px;
+    width: 30%;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: Nunito, sans-serif;
+    border: 1pt solid $white-blue;
+    box-shadow: $white-blue 0 0 10px 1px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all .1s linear;
+
+    &:hover {
+      box-shadow: $white-blue 0 0 15px 5px;
+      transform: scale(1.02);
+    }
+  }
+
+
+  &__itemHeader {
+    display: flex;
+    position: relative;
+    font-weight: bold;
+    flex-wrap: nowrap;
+
+  }
+
+  &__itemTitle {
+    display: inline-block;
+    padding: 0 10px 10px;
+    text-align: center;
+    border-bottom: .1pt solid $white-blue;
+    width: 100%;
+  }
+}
+
+.progressBar {
+  display: flex;
+  align-items: center;
+
+  &__wrapper {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+
+  &__title {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
+}
